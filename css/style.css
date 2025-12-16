@@ -1,0 +1,87 @@
+/* IntelliSite Labs – Custom Premium Styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card base style */
+.card {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(55, 65, 81, 0.6);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #6366f1;
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.35);
+}
+
+/* Work cards */
+.work-card {
+  background: linear-gradient(145deg, rgba(17,24,39,0.8), rgba(3,7,18,0.9));
+  border: 1px solid rgba(55,65,81,0.6);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  color: #f9fafb;
+  transition: all 0.4s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  border-color: #8b5cf6;
+}
+
+/* Process steps */
+.process-step {
+  background: rgba(17,24,39,0.6);
+  border: 1px solid rgba(55,65,81,0.6);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  background: rgba(99,102,241,0.08);
+  border-color: #6366f1;
+}
+
+/* Navbar scroll effect (JS adds class) */
+.nav-scrolled {
+  background: rgba(3, 7, 18, 0.85) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* Buttons subtle glow */
+a.bg-indigo-600 {
+  position: relative;
+}
+
+a.bg-indigo-600::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  background: radial-gradient(circle at center, rgba(99,102,241,0.5), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+a.bg-indigo-600:hover::after {
+  opacity: 1;
+}
+
+/* Footer text smoothing */
+footer {
+  letter-spacing: 0.02em;
+}
